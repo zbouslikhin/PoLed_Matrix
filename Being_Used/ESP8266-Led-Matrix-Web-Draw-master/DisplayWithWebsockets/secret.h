@@ -1,0 +1,2 @@
+#define WIFI_NAME "CGA2121_ZKXZrVE"
+#define WIFI_PASS "64WFrt6JDneuLgZCKz"
