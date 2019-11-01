@@ -22,8 +22,8 @@ Ticker display_ticker;
 #define JSON_BUFF_DIMENSION 2500
 
 #ifndef STASSID
-#define STASSID "CGA2121_ZKXZrVE"
-#define STAPSK  "64WFrt6JDneuLgZCKz"
+#define STASSID ""
+#define STAPSK  ""//put your wifi credentials here
 #endif
 
 uint16_t static d01[] = {
@@ -205,7 +205,7 @@ String answer = "";
 
 //Weather display
 const char server[] = "api.openweathermap.org";
-String apiKey = "37c2b04ccaa511499408f139d69194a6";
+String apiKey = ""; //put your api key here
 String latCity = "52.406921";
 String lonCity = "16.92993";
 String id = "3088171";
@@ -242,7 +242,7 @@ void startWiFi() {
 void startOTA() {
   /*-----START : OTA Setup-----*/
   // No authentication by default
-  //ArduinoOTA.setPassword("Loul12:)");
+  //ArduinoOTA.setPassword("ESP");
   ArduinoOTA.onStart([]() {
     String type;
     if (ArduinoOTA.getCommand() == U_FLASH) {
